@@ -1,0 +1,19 @@
+{
+    "collection": "products",
+    "fields": {
+      "ProductID": {"type": "integer", "example": 101},
+      "ProductName": {"type": "string", "example": "Wireless Mouse"},
+      "Category": {"type": "string", "values": ["Electronics", "Sports", "Home & Kitchen"]},
+      "Price": {"type": "float", "example": 25.99},
+      "Rating": {"type": "float", "range": [0.0, 5.0]},
+      "ReviewCount": {"type": "integer"},
+      "Stock": {"type": "integer"},
+      "Discount": {"type": "string (percentage)", "example": "10%"},
+      "Brand": {"type": "string"},
+      "LaunchDate": {"type": "string (DD-MM-YYYY)"}
+    },
+    "query_examples": [
+      "Example 1: db.products.find({ 'Rating': { '$gte': 4.5 }, 'Stock': { '$gt': 0 } })",
+      "Example 2: db.products.find({ 'Category': 'Electronics' }).sort({ 'Price': -1 })"
+    ]
+  }

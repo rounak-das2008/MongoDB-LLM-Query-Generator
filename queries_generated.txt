@@ -1,0 +1,3 @@
+Query: db.products.find({Price: {$gt: 50}})
+Results: 6 items
+
