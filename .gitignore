@@ -1,7 +1,5 @@
 .env
 __pycache__/
 *.pyc
-*.csv
 *.gguf
-*.gguf.1
 chapri2/
